@@ -1,5 +1,5 @@
 {
-  "name": "test-publish",
+  "name": "@raihanshezan/test-package",
   "version": "1.0.0",
   "description": "Testing how to publish TypeScript package to npm",
   "main": "dist/cjs/index.js",
@@ -19,7 +19,8 @@
     "package": "npm run build && npm pack",
     "test": "jest --no-cache --runInBand",
     "test:cov": "jest --coverage --no-cache --runInBand",
-    "addscope": "node tools/packagejson name @raihanshezan/test-publish"
+    "addscope": "node tools/packagejson name @raihanshezan/test-package",
+    "postversion": "git push --follow-tags"
   },
   "publishConfig": {
     "access": "public"
@@ -41,13 +42,13 @@
   ],
   "author": "Raihan Shezan <contact@raihanshezan.com> (https://raihanshezan.com)",
   "license": "MIT",
-  "homepage": "https://github.com/raihanshezan/test-publish",
+  "homepage": "https://github.com/raihanshezan/test-package",
   "repository": {
     "type": "git",
-    "url": "git@github.com:raihanshezan/test-publish.git"
+    "url": "git@github.com:raihanshezan/test-package.git"
   },
   "bugs": {
-    "url": "https://github.com/raihanshezan/test-publish/issues"
+    "url": "https://github.com/raihanshezan/test-package/issues"
   },
   "dependencies": {},
   "devDependencies": {
