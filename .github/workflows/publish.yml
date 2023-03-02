@@ -6,13 +6,6 @@ on:
       - 'v*'
 
 jobs:
-  release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - name: Release
-        uses: softprops/action-gh-release@v1
-
   publish:
     runs-on: ubuntu-latest
     steps:
