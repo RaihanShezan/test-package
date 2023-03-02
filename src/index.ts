@@ -1,3 +1,3 @@
-import { Num } from './Num'
+import useCopyText from './useCopyText'
 
-export { Num }
+export default useCopyText
